@@ -5,7 +5,7 @@ Welcome to my personal portfolio! This website showcases my skills, projects, an
 ## 🔗 Live Demo
 [Check out my portfolio](https://your-portfolio-link.com) 🚀 
 
-![Portfolio Screenshot](images/screenshot.png)
+![Portfolio Screenshot](![screenshot](https://github.com/user-attachments/assets/8490a6f4-40f9-47be-9d83-c58c34ead6d6))
 
 
 ## 🎨 Features
