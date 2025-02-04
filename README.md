@@ -12,10 +12,10 @@ Welcome to my personal portfolio! This website showcases my skills, projects, an
 - Contact form to reach out 📩  
 
 ## 🛠️ Tech Stack
-- **Frontend:** HTML, CSS, JavaScript, React, Tailwind CSS  
-- **Backend (if any):** Node.js, Express.js  
-- **Database:** MongoDB, SQL  
-- **Other Tools:** Git, GitHub, VS Code  
+- **Frontend :** HTML, CSS, JavaScript, React, Tailwind CSS  
+- **Backend :** Node.js, Express.js  
+- **Database :** MongoDB, SQL  
+- **Tools :** Git, GitHub, VS Code  
 
 ## 🏗️ How to Run Locally
 1. Clone the repo:  
