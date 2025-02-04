@@ -1,9 +1,12 @@
-# 🌐 My Portfolio Website
+# 🌐 My Portfolio Website<sub>under_Contstruction<sub>
 
 Welcome to my personal portfolio! This website showcases my skills, projects, and experience as a developer.
 
 ## 🔗 Live Demo
-[Check out my portfolio](https://your-portfolio-link.com) 🚀  
+[Check out my portfolio](https://your-portfolio-link.com) 🚀 
+
+![Portfolio Screenshot](![screenshot](https://github.com/user-attachments/assets/8490a6f4-40f9-47be-9d83-c58c34ead6d6))
+
 
 ## 🎨 Features
 - Responsive design for all devices 📱💻  
@@ -12,10 +15,10 @@ Welcome to my personal portfolio! This website showcases my skills, projects, an
 - Contact form to reach out 📩  
 
 ## 🛠️ Tech Stack
-- **Frontend:** HTML, CSS, JavaScript, React, Tailwind CSS  
-- **Backend (if any):** Node.js, Express.js  
-- **Database:** MongoDB, SQL  
-- **Other Tools:** Git, GitHub, VS Code  
+- **Frontend :** HTML, CSS, JavaScript, React, Tailwind CSS  
+- **Backend :** Node.js, Express.js  
+- **Database :** MongoDB, SQL  
+- **Tools :** Git, GitHub, VS Code  
 
 ## 🏗️ How to Run Locally
 1. Clone the repo:  
