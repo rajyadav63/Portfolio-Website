@@ -3,7 +3,10 @@
 Welcome to my personal portfolio! This website showcases my skills, projects, and experience as a developer.
 
 ## 🔗 Live Demo
-[Check out my portfolio](https://your-portfolio-link.com) 🚀  
+[Check out my portfolio](https://your-portfolio-link.com) 🚀 
+
+![Portfolio Screenshot](images/screenshot.png)
+
 
 ## 🎨 Features
 - Responsive design for all devices 📱💻  
