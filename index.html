@@ -19,7 +19,7 @@
     <link rel="icon" href="./images/favicon.png" type="image/png" />
   </head>
   <style>
-    .mode{
+    .mode {
       border: none;
       background-color: transparent;
     }
@@ -29,8 +29,10 @@
       <a href="#" class="logo-holder">
         <div class="logo"><img src="./images/favicon.png" alt="" /></div>
         <div class="logo-text">Portfolio</div>
+        <button class="mode" id="theme-toggle">
+          <p>🌙 Dark Mode</p>
+        </button>
       </a>
-      <button class="mode" id="theme-toggle">🌙 Dark Mode</button>
       <nav>
         <ul id="menu">
           <li><a id="home" href="#hero">Home</a></li>
@@ -38,7 +40,7 @@
           <li><a href="#skills">Skills</a></li>
           <li><a href="#project">Projects</a></li>
           <li>
-            <a href="#contact" class="button"
+            <a href="mailto:vector36razz@gmail.com" class="button"
               >Contact me</a
             >
           </li>
@@ -64,11 +66,12 @@
             </p>
             <div class="call-to-action">
               <a href="#" class="button red">View Resume</a>
-              <a href="#contact" class="button blue"
-                >Contact me</a
-              >
+              <a href="#contact" class="button blue">Contact me</a>
             </div>
-          
+            <div class="social-link">
+              <a href="#"><i class="fa-brands fa-x-twitter fa-2x"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin-in fa-2x"></i></a>
+            </div>
           </div>
         </div>
         <div class="hero-yellow">
@@ -221,26 +224,26 @@
     </main>
 
     <footer>
-        <div id="contact" class="sticky-media">
-            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
-            <a href="#"><i class="fa-brands fa-github"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#"><i class="fa-regular fa-envelope"></i></a>
-        </div>
-    
-        <div class="footer-content">
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#project">Projects</a></li>
-          </ul>
-        </div>
-        <div class="footer-bar">
-          <p>@copy; 2025 <span>codeSyntax</span>. All right reserved</p>
-        </div>
+      <div id="contact" class="sticky-media">
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-github"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-regular fa-envelope"></i></a>
+      </div>
+
+      <div class="footer-content">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#project">Projects</a></li>
+        </ul>
+      </div>
+      <div class="footer-bar">
+        <p>@copy; 2025 <span>codeSyntax</span>. All right reserved</p>
+      </div>
     </footer>
 
     <script src="script.js"></script>

@@ -21,7 +21,14 @@
   --blue: #0a61ae;
   --blue-100: #e2f8ff;
   --blue-400: #61dafb;
+  --blue-600: #21c3ef;
   --blue-800: #0a61ae;
+  --bg-color: #fff;
+  --text-color: #111;
+}
+.dark-mode {
+  --bg-color: #111;
+  --text-color: #fff;
 }
 
 body {
@@ -29,6 +36,8 @@ body {
   font-optical-sizing: auto;
   font-style: normal;
   font-size: 16px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
 }
 a {
   text-decoration: none;
@@ -47,6 +56,31 @@ header {
   max-width: 1500px;
   margin: auto;
   border-bottom: 1px solid rgba(0, 0, 0, 0, 3);
+  a {
+    text-decoration: none;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  .mode {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin-left: 20px;
+    &:hover {
+      text-decoration: none;
+      cursor: pointer;
+    }
+    p {
+      @media (max-width: 1024px) {
+        display: none;
+        margin-left: 10px;
+      }
+      @media (max-width: 760px) {
+        display: none;
+        margin-left: 10px;
+      }
+    }
+  }
 
   .logo-holder {
     display: flex;
@@ -55,8 +89,8 @@ header {
     font-weight: 700;
 
     .logo {
-      background-color: var(--base-800);
-      color: #fff;
+      background-color: var(--bg-color);
+      color: var(--text-color);
       height: 60px;
       width: 60px;
       border-radius: 50%;
@@ -72,7 +106,11 @@ header {
       border-radius: 50%;
     }
     .logo-text {
+      text-decoration: none;
       flex: 1;
+      &:hover {
+        text-decoration: none;
+      }
     }
   }
   nav {
@@ -87,9 +125,10 @@ header {
         a {
           display: inline-block;
           padding: 10px 20px;
-          color: var(--base);
+          color: var(--text-color);
           &:hover {
             background-color: var(--base-100);
+            color: var(--base-800);
             border-radius: 10px;
             text-decoration: none;
           }
@@ -98,7 +137,7 @@ header {
     }
     .mobile-toggle {
       display: none;
-      color: var(--base-800);
+      color: var(--text-color);
       padding: 12px;
 
       @media (max-width: 760px) {
@@ -136,6 +175,7 @@ header {
     }
   }
 }
+
 .container {
   max-width: 1440px;
   margin: auto;
@@ -187,6 +227,7 @@ header {
     padding: 3px 10px;
     flex: 1;
     background-color: var(--blue-100);
+    color: #101010;
     border-radius: 30px;
     padding: 30px;
     display: flex;
@@ -220,10 +261,37 @@ header {
         margin-bottom: 10px;
       }
     }
-    .social-links {
-      a {
-        &:hover {
-          text-decoration: none;
+    .social-link {
+    a {
+      font-size: 25px;
+      transition: 0.3s ease-in-out;
+      position: relative;
+      i {
+        color: #040404;
+        transition: 0.3s ease-in-out;
+        padding: 0 5px;
+      }
+      &:hover {
+        border-color: transparent;
+        i {
+          text-shadow: 0 0 15px #cf9605;
+        }
+      }
+    }
+      a:nth-child(1):hover {
+        /* box-shadow: 0 0 15px #1f2021; Twitter  */
+
+        i {
+          text-shadow: 0 0 15px #242525;
+          color: #e7e8e9;
+        }
+      }
+      a:nth-child(2):hover {
+        /* box-shadow: 0 0 15px #1da1f2; LinkedIn */
+
+        i {
+          text-shadow: 0 0 15px #1da1f2;
+          color: #1da1f2;
         }
       }
     }
@@ -248,7 +316,7 @@ header {
 
 /*===================== Skill Logo ====================*/
 .logos {
-  background-color: var(--base-100);
+  background-color: var(--bg-color);
   border-radius: 30px;
   padding: 20px 0px;
   overflow: hidden;
@@ -288,7 +356,7 @@ h2 {
   font-size: 64px;
   margin-bottom: 12px;
   padding: 30px;
-  color: var(--base-800);
+  color: var(--text-color);
   small {
     display: block;
     font-weight: 100;
@@ -303,7 +371,7 @@ h2 {
 h3 {
   font-size: 32px;
   margin-bottom: 12px;
-  color: var(--base-800);
+  color: var(--text-color);
   font-weight: 600;
   line-height: 1;
 }
@@ -320,7 +388,14 @@ h3 {
       flex-direction: column;
     }
     .left-column {
+      background-color: var(--bg-color);
+      padding: 10px 14px;
+      border-radius: 10px;
+      margin-right: 5px;
       flex: 1;
+      h3 {
+        color: var(--text-color);
+      }
       ul {
         list-style-type: none;
         gap: 10px;
@@ -328,7 +403,7 @@ h3 {
         margin-bottom: 18px;
         li {
           display: inline-block;
-          background-color: var(--blue-400);
+          background-color: var(--blue-600);
           padding: 12px 20px;
           border-radius: 12px;
           margin-bottom: 10px;
@@ -341,9 +416,16 @@ h3 {
       }
     }
     .right-column {
+      background-color: var(--bg-color);
+      border-radius: 10px;
+      padding: 10px 15px;
       flex: 1;
+      h3 {
+        color: var(--text-color);
+      }
       p {
         margin-bottom: 12px;
+        color: var(--text-color);
       }
     }
   }
@@ -457,13 +539,12 @@ footer {
     gap: 20px;
     display: flex;
     position: fixed;
-    top: 80%;
+    top: 84%;
     left: auto;
     z-index: 1000;
-    
-    @media (max-width:760px) {
-      flex-direction: column;
-      margin-bottom: 20px;
+
+    @media (max-width: 650px) {
+      display: none;
     }
 
     box-shadow: 0 0 20px rgb(222, 120, 4);
@@ -546,24 +627,23 @@ footer {
     display: flex;
     margin-top: 10px;
     margin-bottom: 20px;
-    @media (max-width:760px) {
+    @media (max-width: 760px) {
       display: none;
     }
-    ul{
+    ul {
       display: flex;
       gap: 20px;
       list-style-type: none;
-      li{
+      li {
         padding: 10px 10px;
         font-size: 16px;
-        &:hover{
+        &:hover {
           background-color: #f5eded;
           border-radius: 10px;
-          a{
+          a {
             text-decoration: none;
           }
         }
-
       }
     }
   }
@@ -579,11 +659,12 @@ footer {
     border-radius: 20px;
     font-size: 18px;
 
-    span{
+    span {
       color: #1da1f2;
       font-size: 28px;
-      @media (max-width:760px) {
+      @media (max-width: 760px) {
         display: block;
+        font-size: 18px;
       }
     }
   }
