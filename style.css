@@ -21,6 +21,7 @@
   --blue: #0a61ae;
   --blue-100: #e2f8ff;
   --blue-400: #61dafb;
+  --blue-300: #6fc5dc;
   --blue-600: #21c3ef;
   --blue-800: #0a61ae;
   --bg-color: #fff;
@@ -49,8 +50,10 @@ a {
 
 /*===================== Header Section ====================*/
 header {
-  padding-top: 12px;
+  /* padding-top: 12px;
   padding-left: 15px;
+  padding-right: 15px; */
+  padding: 12px 15px 0px 15px;
   display: flex;
   justify-content: space-between;
   max-width: 1500px;
@@ -316,19 +319,23 @@ header {
 
 /*===================== Skill Logo ====================*/
 .logos {
-  background-color: var(--bg-color);
+  background-color: var(--blue-300);
   border-radius: 30px;
-  padding: 20px 0px;
+  padding: 15px 0px;
   overflow: hidden;
   @media (max-width: 1024px) {
     border-radius: 0px;
+    padding: 10px 0px;
   }
   .marquee {
     width: 100vw;
     max-width: 100%;
-    height: 120px;
+    height: 110px;
     overflow: hidden;
     position: relative;
+    @media (max-width:1024px) {
+      height: 90px;
+    }
 
     .track {
       display: flex;
@@ -338,6 +345,13 @@ header {
       will-change: transform;
       animation: marquee 20s linear infinite;
       width: 200%;
+
+      img{
+        width: 90px;
+        @media (max-width:1024px) {
+          width: 70px;
+        }
+      }
     }
   }
 }
@@ -564,10 +578,31 @@ footer {
         color: #f0f0f0;
         transition: 0.3s ease-in-out;
       }
+      &::after {
+        content: attr(data-tooltip);
+        position: absolute;
+        bottom: 120%;  
+        left: 50%;
+        transform: translateX(-50%);
+        /* background-color: black; */
+        color: white;
+        padding: 15px 10px;
+        border-radius: 5px;
+        font-size: 22px;
+        white-space: nowrap;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease-in-out;
+      }
+
       &:hover {
         border-color: transparent;
         i {
           text-shadow: 0 0 15px #fff;
+        }
+        &::after {
+          opacity: 1;
+          visibility: visible;
         }
       }
     }
