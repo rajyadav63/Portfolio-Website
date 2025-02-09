@@ -75,11 +75,11 @@ header {
     }
     p {
       @media (max-width: 1024px) {
-        display: none;
+        /* display: none; */
         margin-left: 10px;
       }
       @media (max-width: 760px) {
-        display: none;
+        /* display: none; */
         margin-left: 10px;
       }
     }
