@@ -581,14 +581,14 @@ footer {
       &::after {
         content: attr(data-tooltip);
         position: absolute;
-        bottom: 120%;  
+        bottom: 130%;  
         left: 50%;
         transform: translateX(-50%);
-        /* background-color: black; */
+        background-color: black;
         color: white;
-        padding: 15px 10px;
+        padding: 5px 10px;
         border-radius: 5px;
-        font-size: 22px;
+        font-size: 12px;
         white-space: nowrap;
         opacity: 0;
         visibility: hidden;
