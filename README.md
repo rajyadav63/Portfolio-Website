@@ -3,9 +3,9 @@
 Welcome to my personal portfolio! This website showcases my skills, projects, and experience as a developer.
 
 ## 🔗 Live Demo
-[Check out my portfolio](https://codeSyntaxDev.github.io/Portfolio-Website/)] 🚀 
+[Check out my portfolio](https://rajyadav63.github.io/Portfolio-Website/)] 🚀 
 ## 📸 Portfolio Screenshot
-![Portfolio Screenshot](https://github.com/codeSyntaxDev/Portfolio-Website/blob/main/images/screenshot.png)
+![Portfolio Screenshot](https://github.com/rajyadav63/Portfolio-Website/blob/main/images/screenshot.png)
 
 
 
